@@ -29,7 +29,7 @@
 				   <environment>Sandbox</environment>
 				   <workers>1</workers>
 				   <workerType>Micro</workerType>
-				   <applicationName>WorldTimeZoneService</applicationName>
+				   <applicationName>WorldTimeZoneService-SADA</applicationName>
 				   <password>Shubhisv@123</password>
 				   <muleVersion>4.2.0</muleVersion>
 				</cloudHubDeployment>
@@ -37,6 +37,8 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	
 
 	<dependencies>
         <dependency>
