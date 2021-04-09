@@ -7,13 +7,11 @@
 	<artifactId>worldtimezoneapp</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
-
 	<name>worldtimezoneapp</name>
-
+	
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 		<app.runtime>4.2.0</app.runtime>
 		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
 	</properties>
@@ -26,10 +24,21 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				<cloudHubDeployment>
+				   <username>sada042021</username>
+				   <environment>Sandbox</environment>
+				   <workers>1</workers>
+				   <workerType>Micro</workerType>
+				   <applicationName>WorldTimeZoneService-SADA</applicationName>
+				   <password>Shubhisv@123</password>
+				   <muleVersion>4.2.0</muleVersion>
+				</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	
+	
 
 	<dependencies>
         <dependency>
